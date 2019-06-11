@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html lang="zxx">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Gift</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all" />
+		<!-- Slick nav CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css" media="all" />
+		<!-- Iconfont CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/icofont.css" media="all" />
+		<!-- Slick CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<!-- Owl carousel CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+		<!-- Popup CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+		<!-- Switcher CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/switcher-style.css">
+		<!-- Animate CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+		<!-- Main style CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="all" />
+		<!-- Favicon Icon -->
+		<link rel="icon" type="image/png" href="assets/img/favcion.png" />
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+		<style>
+			.faq .answer{
+            	display: none;
+			}
+			
+			.show{
+				background-color: white;
+				border: none;
+				color: black;
+				padding: 15px 32px;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 0.5px;
+				cursor: pointer;
+				padding-left: 0;
+				padding-right: 0;
+				width: 100%;
+			}
+
+			#button-about, #button-contact, #button-faq{
+				margin-left: 580px;
+				margin-top: 0px;
+				background-color: rgb(168, 167, 167);
+				border: none;
+				padding: 8px 20px;
+			}
+		
+		</style>
+	</head>
+	<body data-spy="scroll" data-target=".header" data-offset="50">
+		<!-- Page loader -->
+	    <div id="preloader"></div>
+		<!-- header section start -->
+		<header class="header">
+			<div class="container">
+				<div class="row flexbox-center">
+
+					<div class="col-lg-10 col-md-9 col-6">
+						<div class="responsive-menu"></div>
+					    <div class="mainmenu">
+                            <ul id="primary-menu">
+                                <li><a class="nav-link active" href="#home">Home</a></li>
+                                <li><a class="nav-link" href="#about">About</a></li>
+                                <li><a class="nav-link" href="#contact">Contact Us</a></li>
+                                <li><a class="nav-link" href="#faq">FAQs</a></li>
+                            </ul>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</header><!-- header section end -->
+		<!-- hero area start -->
+		<section class="hero-area" id="home">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="hero-area-content">
+							<h1>Welcome to my Website</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
+						</div>
+					</div>
+					<div class="col-lg-5">
+					    <div class="hand-mockup text-lg-left text-center">
+							<img src="assets/img/hand-mockup.png" alt="Hand Mockup" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- hero area end -->
+
+		<br><br>
+        <input id="button-about" type="button" value="About us">
+		<!-- about section start -->
+		<section id="about" class="about-area ptb-90" > 
+			<div class="container" >
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="sec-title">
+							<h2>About us<span class="sec-title-border"><span></span><span></span><span></span></span></h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio dicta similique, dolores, iusto ab odio odit soluta hic incidunt sint veritatis harum libero amet suscipit est, fuga officia veniam repudiandae!</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section><!-- about section end -->
+
+		<br><br>
+		<input id="button-contact" type="button" value="contact us"><br><br><br><br>
+        <section id="contact" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="contact-form">
+                            <h4>Contact us</h4>
+                            <p class="form-message"></p>                           
+							<input type="text" name="Name" id="name" placeholder="Name">
+							<input type="email" name="Email" id="email" placeholder="Email">							
+							<input type="submit" id="submit" value="submit">
+							<br><br>
+							</div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+		<br><br>
+		<input id="button-faq" type="button" value="FAQ">
+        <section id="faq" class="faq" style="margin-top: 50px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="contact-form">
+                            <h4>FAQs</h4>
+                            <button id="show1" class="show">Question 1</button><br>
+							<div id="answer1" class="answer">
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+							</div>
+							<button id="show2" class="show">Question 2</button><br>
+							<div id="answer2" class="answer">
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+							</div>
+							<button id="show3" class="show">Question 3</button>
+							<div id="answer3" class="answer">
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+							</div>   
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+		
+		<br><br>
+		
+		<!-- footer section start -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+                    <div class="col-lg-12">
+						<div class="copyright-area">
+							
+							<p>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with GGGG by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </p>
+						</div>
+                    </div>
+				</div>
+			</div>
+		</footer><!-- footer section end -->
+
+        <script>
+			$(document).ready(function(){
+				console.log("LOG");
+				console.info("Info");
+				console.error("Error");
+
+				$("#button-about").on("click", function(){
+					$("#about").animate({
+						height: "toggle",
+						opacity: "toggle"
+						}, {
+						duration: "slow"
+						})          
+				});   
+
+				$("#button-contact").on("click", function(){
+					$("#contact").animate({
+						height: "toggle",
+						opacity: "toggle"
+						}, {
+						duration: "slow"
+					});                              
+				}) 
+
+				$("#submit").click(function(){
+						var name = $("#name").val();
+						var email = $("#email").val();
+
+						if (name != "" && email != ""){
+							$("#contact").clearQueue();
+							$("#contact").append("Welcome! " + name + ". Please confirm your email: " + email + ". Thank you.");					
+						}
+						else
+							$("contact").append("Please fill out the information.") 
+				}); 
+
+				$("#button-faq").on("click", function(){
+					$("#faq").animate({
+						height: "toggle",
+						opacity: "toggle"
+						}, {
+						duration: "slow"
+					});
+				})
+
+				$("#show1").on("click", function(){
+					$("#answer1").animate({
+						height: "toggle",
+						opacity: "toggle"
+						}, {
+						duration: "slow"
+					});                              
+				}) 
+				
+				$("#show2").on("click", function(){
+					$("#answer2").animate({
+						height: "toggle",
+						opacity: "toggle"
+						}, {
+						duration: "slow"
+					});                              
+				}) 
+				
+				$("#show3").on("click", function(){
+					$("#answer3").animate({
+						height: "toggle",
+						opacity: "toggle"
+						}, {
+						duration: "slow"
+					});                              
+				});         
+			});
+        </script>
+        
+		<!-- jquery main JS -->
+		<script src="assets/js/jquery.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- Slick nav JS -->
+		<script src="assets/js/jquery.slicknav.min.js"></script>
+		<!-- Slick JS -->
+		<script src="assets/js/slick.min.js"></script>
+		<!-- owl carousel JS -->
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<!-- Popup JS -->
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<!-- Counter JS -->
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<!-- Counterup waypoints JS -->
+		<script src="assets/js/waypoints.min.js"></script>
+	    <!-- YTPlayer JS -->
+	    <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+		<!-- jQuery Easing JS -->
+		<script src="assets/js/jquery.easing.1.3.js"></script>
+		<!-- WOW JS -->
+		<script src="assets/js/wow-1.3.0.min.js"></script>
+		<!-- Switcher JS -->
+		<script src="assets/js/switcher.js"></script>
+		<!-- main JS -->
+		<script src="assets/js/main.js"></script>
+
+
+        
+	</body>
+
+    
+</html>
