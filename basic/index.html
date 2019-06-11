@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>basic html</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(235, 235, 235);
+            font-family: sans-serif;
+            margin: 0%;
+        }
+        ul.nav-bar{ 
+            position: fixed;
+            top: 0;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+            width: 100%;
+        }
+
+        ul li {
+            float: left;
+        }
+
+        ul li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            background-color: #ddd;
+        }
+
+        div.wrapper{
+            clear: both;
+        }
+
+        div#home{
+            margin-top:50px; 
+            background-image: url(/img/img3.jpg);
+            min-height: 300px;
+            text-align: center;
+            font-size: 38px;
+            line-height: 300px;
+        }
+
+        div#home p{
+            margin-top: 0;
+        }
+
+
+        div#about{
+            background: #666;
+        }
+
+        div#contact{
+            background: #666;
+        }
+
+        div#faq{
+            background: #666;
+        }
+
+        input#email{
+            margin-left: 2px;
+        }
+
+        footer{
+            background-color: #ddd;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <header >
+        <div>
+            <ul class="nav-bar" >
+                    <li><a href="#home" >Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="main" class="wrapper"></div>
+
+        <div id="home"> 
+            <p>Welcome</p>
+        </div>
+
+        
+
+        <input id="button-about" type="button" value="About us">
+        
+        <br>
+        <div id="about">
+            <h4>About us</h4>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio dicta similique, dolores, iusto ab odio odit soluta hic incidunt sint veritatis harum libero amet suscipit est, fuga officia veniam repudiandae!
+        </div>
+
+        <br><br>
+        <input id="button-contact" type="button" value="contact us">
+        
+        <div id="contact">
+            <h4>Contact us</h4>
+            Name: <input type="text" name="Name" id="name">
+            <br><br>
+            Email: <input type="email" name="Email" id="email">
+            <br><br>
+            <input type="submit" id="submit" value="submit">
+            <br><br>
+        </div>
+        
+
+
+        <br><br>
+        <input id="button-faq" type="button" value="FAQ">
+        
+        <div id="faq">
+            <h4>FAQs</h4>
+            Question: <input type="text" name="Name" id="name">
+            <input type="submit" id="submit1" value="submit">
+
+        </div>
+
+    </div>
+    <br><br>
+    <footer>
+        Footer
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            var myarray = [1,2,3];
+            var mystr = "My String";
+            var myint = 1;
+
+            console.log("LOG");
+            console.info("Info");
+            console.error("Error");
+
+            $("#button-about").on("click", function(){
+                $("#about").animate({
+                    height: "toggle",
+                    opacity: "toggle"
+                    }, {
+                    duration: "slow"
+                    })
+
+                // $("#about").prepend("<h4>======Test======</h4>")
+                // $("#about").append("<h4>======Test======</h4>")
+                // $("#messsage").prepend("<h4>======Test======</h4>")
+                
+            });
+
+            $("#button-contact").on("click", function(){
+                $("#contact").animate({
+                    height: "toggle",
+                    opacity: "toggle"
+                    }, {
+                    duration: "slow"
+                });
+                $("#submit").click(function(){
+                    var name = $("#name").val();
+                    var email = $("#email").val();
+
+                    if (name != "" && email != ""){
+                        $("#contact").append("Welcome! " + name + ". Please confirm your email: " + email + ". Thank you.");
+                    }
+                    else
+                        $("contact").append("Please fill out the information.")
+                    
+                });
+                
+            })                 
+
+            $("#button-faq").on("click", function(){
+                $("#faq").animate({
+                    height: "toggle",
+                    opacity: "toggle"
+                    }, {
+                    duration: "slow"
+                });
+            })
+            
+        });
+    </script>
+
+</body>
+</html>
+
