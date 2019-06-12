@@ -157,7 +157,7 @@
 							</div>
 							<button id="show2" class="show">Question 2</button><br>
 							<div id="answer2" class="answer">
-								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 							</div>
 							<button id="show3" class="show">Question 3</button>
 							<div id="answer3" class="answer">
@@ -217,10 +217,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 						if (name != "" && email != ""){
 							$("#contact").clearQueue();
-							$("#contact").append("Welcome! " + name + ". Please confirm your email: " + email + ". Thank you.");					
+							// $("#contact").append(a"Welcome! " + name + ". Please confirm your email: " + email + ". Thank you.");	
+							alert("Welcome! " + name + ". Please confirm your email: " + email + ". Thank you.");
+							window.location.href='new_index.html';
 						}
-						else
-							$("contact").append("Please fill out the information.") 
+						else{
+							alert("Please fill out the information.");
+						}
+							
 				}); 
 
 				$("#button-faq").on("click", function(){
